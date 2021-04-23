@@ -1,6 +1,7 @@
 package br.com.webproject.cp.cp.controller.dto;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import br.com.webproject.cp.cp.modelo.Curso;
 
@@ -23,11 +24,11 @@ public class CursoDto {
 	public String getNome() {
 		return nome;
 	}
-	public LocalDate getDataInicio() {
-		return dataInicio;
+	public String getDataInicio() {
+		return dataInicio.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 	}
-	public LocalDate getDataFinal() {
-		return dataFinal;
+	public String getDataFinal() {
+		return dataFinal.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 	}
 	
 	
