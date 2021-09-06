@@ -1,8 +1,8 @@
 package br.com.gleyser.forum.enums;
 
 public enum UserType {
-	CRIADOR("Criador"),
-	PARTICIPANTE("Participante");
+	CREATOR("Creator"),
+	PARTICIPANT("Participant");
 	
 	private final String description;
 	
@@ -13,6 +13,5 @@ public enum UserType {
 	public String getDescription() {
 		return description;
 	}
-	
 
 }
