@@ -23,7 +23,7 @@ public class UserController {
 		user.setName("Gleyser");
 		user.setEmail("g@gmail.com");
 		user.changeToCreator();
-		UserDto userdto = new UserDto(user.getName(), user.getType().toString());
+		UserDto userdto = new UserDto(1L, user.getName(), user.getType().toString());
 		return userdto;
 	}
 	
